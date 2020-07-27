@@ -25,7 +25,7 @@ class PfeiltastenHandler(parent=None):
         if (GPIO.input(self.ButtonRIGHT_pin) == 0):
             return "right"
 
-class Ultraschallsensor():
+class Ultrasonicsensor():
     def __init__(self, trig=36, echo=32):
         GPIO.setmode(GPIO.BOARD)
         GPIO.setwarnings(False)
